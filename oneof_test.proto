@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message Test {
+    oneof message {
+        MessageA a = 1;
+        MessageB b = 2;
+    }
+}
+
+message MessageA {
+    string content = 1;
+}
+message MessageB {
+    int32 content = 1;
+}
